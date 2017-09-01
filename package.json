@@ -1,14 +1,14 @@
 {
   "name": "babel-plugin-inline-dotenv",
   "version": "1.1.1",
-  "description": "Load your `.env` file and replace `process.env.MY_VARIABLE` with the value you set.",
+  "description": "Load your `.env` file and replace `process.env.MY_VARIABLE` with the value you set. Forked from babel-plugin-inline-dotenv. This version enables expansion of vars (dotenv-expand)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brysgo/babel-plugin-inline-dotenv.git"
+    "url": "git+https://github.com/efossvold/babel-plugin-inline-dotenv.git"
   },
   "keywords": [
     "babel",
@@ -17,11 +17,8 @@
   ],
   "author": "Bryan Goldstein",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brysgo/babel-plugin-inline-dotenv/issues"
-  },
-  "homepage": "https://github.com/brysgo/babel-plugin-inline-dotenv#readme",
   "dependencies": {
-    "dotenv": "^2.0.0"
+    "dotenv": "^2.0.0",
+    "dotenv-expand": "^4.0.1"
   }
 }

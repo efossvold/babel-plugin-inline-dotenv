@@ -1,6 +1,8 @@
 "use strict";
 
-var dotenv;
+var parsed;
+var dotenv = require('dotenv')
+var dotenvExpand = require('dotenv-expand')
 
 module.exports = function (options) {
   var t = options.types;
@@ -10,8 +12,8 @@ module.exports = function (options) {
       MemberExpression: function MemberExpression(path, state) {
         if(t.isAssignmentExpression(path.parent) && path.parent.left == path.node) return;
         if (path.get("object").matchesPattern("process.env")) {
-          if (!dotenv) {
-            dotenv = require('dotenv').config(state.opts);
+          if (!parsed) {
+            dotenvExpand(dotenv.config(state.opts))
           }
           var key = path.toComputedKey();
           if (t.isStringLiteral(key)) {
@@ -22,11 +24,11 @@ module.exports = function (options) {
             var le = t.logicalExpression;
 
             path.replaceWith(
-              le('||', 
-                le('&&', 
+              le('||',
+                le('&&',
                   le('&&', i('process'), me(i('process'), i('env'))),
                   me(i('process.env'), i(name))
-                ), 
+                ),
                 t.valueToNode(value)
               )
             );
