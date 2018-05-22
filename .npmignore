@@ -1,0 +1,8 @@
+__tests__
+.eslintrc.yml
+.git
+.gitignore
+.npmignore
+example.js
+run.js
+yarn.lock

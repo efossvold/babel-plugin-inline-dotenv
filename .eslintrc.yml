@@ -1,0 +1,108 @@
+---
+# extends:
+  # - airbnb
+
+parser: babel-eslint
+
+plugins:
+  - import
+  - class-property
+
+env:
+  browser: true
+  node: true
+
+# settings:
+#   import/resolver: babel-module
+
+# globals:
+#   STATIC_URL: true
+#   IMAGES_URL: true
+#   FB_APP_ID: true
+#   FB_APP_SECRET: true
+
+rules:
+  arrow-parens: 0
+  array-callback-return: 0
+  brace-style: 0
+  class-methods-use-this: 0
+  comma-dangle: 0
+  consistent-return: 0
+  eol-last: 0
+  func-names: 0
+  function-paren-newline: 0
+  global-require: 0
+  indent:
+    - 1
+    - 2
+    - { SwitchCase: 1, MemberExpression: 0 }
+  keyword-spacing: 0
+  max-len: 0
+  no-case-declarations: 0
+  no-restricted-syntax: 0
+  no-console: 0
+  no-empty: 0
+  no-multiple-empty-lines: 0
+  no-param-reassign: 0
+  no-multi-spaces: 0
+  no-plusplus:
+    - error
+    - allowForLoopAfterthoughts: true
+  no-trailing-spaces: 0
+  no-underscore-dangle: 0
+  no-unused-vars:
+    - error
+    - varsIgnorePattern: "^styles$|some_other_var"
+  object-curly-spacing: 0
+  object-curly-newline: 0
+  padded-blocks: 0
+  prefer-template: 0
+  quotes: 0
+  semi: 0
+  space-before-function-paren: 0
+  space-in-parens: 0
+  vars-on-top: 0
+
+  # imports
+  import/first: 0
+  import/extensions: 0
+  import/no-extraneous-dependencies: 0
+  import/no-named-as-default: 0
+  import/newline-after-import: 0
+  import/prefer-default-export: 0
+
+  # eslint-plugin-import
+  import/no-unresolved: [2, {commonjs: true, amd: true, ignore: ['components', 'routes', 'styles', 'constants', 'helpers', 'utils', 'config', 'store', 'firebase', 'tests', 'text']}]
+  import/named: 2
+  import/namespace: 2
+  import/default: 2
+  import/export: 2
+
+  # react
+  # react/react-in-jsx-scope: 0
+  # react/require-extension: 0
+  # react/no-multi-comp: 1
+  # react/prop-types: [1, {ignore: ['className']}]
+  # react/sort-comp: 0
+  # react/no-array-index-key: 1
+  # react/require-default-props: 0
+  # react/forbid-prop-types: 0
+  # react/no-find-dom-node: 0
+
+  # # react/jsx
+  # react/jsx-first-prop-new-line: 0
+  # react/jsx-max-props-per-line: 0
+  # react/jsx-closing-bracket-location: 1
+  # react/jsx-indent-props:
+  #   - 1
+  #   - 2
+  # react/jsx-indent:
+  #   - 1
+  #   - 2
+  # react/jsx-filename-extension: 0
+  # # Complains about emotion css tags on elements (could be a bug)
+  # react/jsx-curly-brace-presence: 0
+  #
+  # # jsx-a11y
+  # jsx-a11y/no-static-element-interactions: 0
+  # jsx-a11y/anchor-is-valid: 0
