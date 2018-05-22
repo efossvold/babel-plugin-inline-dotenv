@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel-plugin-inline-env Snapshot: Snapshot 1`] = `
+"
+var a = process.env.DEFAULT_1;
+var b = process.env.DEFAULT_2;
+var c = process.env.VAR_1;
+var d = process.env.VAR_DEFAULT_1;
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+var a = process && process.env && process.env.DEFAULT_1 || \\"default1\\";
+var b = process && process.env && process.env.DEFAULT_2 || \\"default2\\";
+var c = process && process.env && process.env.VAR_1 || \\"var1\\";
+var d = process && process.env && process.env.VAR_DEFAULT_1 || \\"var1_default1_default2\\";
+"
+`;

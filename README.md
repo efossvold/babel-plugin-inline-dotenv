@@ -1,6 +1,6 @@
-# babel-plugin-inline-dotenv
+# babel-plugin-inline-env
 
-Load your `.env` file and replace `process.env.MY_VARIABLE` with the value you set.
+Forked from `babel-plugin-inline-env` and inspired by `node-dotenv-extended` to support a common `.env.defaults` file which other `.env.*` can inherit from. Load your `.env` and replace `process.env.MY_VARIABLE` with the value you set.
 
 tl;dr
 

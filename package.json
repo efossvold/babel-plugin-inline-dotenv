@@ -1,24 +1,26 @@
 {
-  "name": "babel-plugin-inline-dotenv",
-  "version": "1.1.1",
-  "description": "Load your `.env` file and replace `process.env.MY_VARIABLE` with the value you set. Forked from babel-plugin-inline-dotenv. This version enables expansion of vars (dotenv-expand)",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/jest",
+    "test-u": "node_modules/.bin/jest -u"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/efossvold/babel-plugin-inline-dotenv.git"
-  },
-  "keywords": [
-    "babel",
-    "plugin",
-    "dotenv"
-  ],
-  "author": "Bryan Goldstein",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^2.0.0",
-    "dotenv-expand": "^4.0.1"
+    "@babel/cli": "7.0.0-beta.47",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-tester": "^5.0.0",
+    "dotenv": "^5.0.1",
+    "dotenv-expand": "^4.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-class-property": "^1.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "fs": "^0.0.1-security",
+    "glob-fs": "^0.1.7",
+    "image-size": "^0.6.2",
+    "jest": "^22.4.4"
   }
 }
