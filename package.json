@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/efossvold/babel-plugin-inline-env.git"
+    "url": "git+https://github.com/efossvold/babel-plugin-inline-dotenv-expanded.git"
   },
   "keywords": [
     "babel",
@@ -16,28 +16,27 @@
   "author": "Erik Fossvold",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/efossvold/babel-plugin-inline-env/issues"
+    "url": "https://github.com/efossvold/babel-plugin-inline-dotenv-expanded/issues"
   },
-  "homepage": "https://github.com/efossvold/babel-plugin-inline-env#readme",
+  "homepage": "https://github.com/efossvold/babel-plugin-inline-dotenv-expanded#readme",
   "scripts": {
-    "test": "node_modules/.bin/jest",
-    "test-u": "node_modules/.bin/jest -u"
+    "test": "node_modules/.bin/jest"
   },
   "dependencies": {
-    "dotenv": "^5.0.1",
-    "dotenv-expand": "^4.2.0"
+    "dotenv": "^8.0.0",
+    "dotenv-expand": "^5.1.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0-beta.47",
-    "@babel/core": "7.0.0-beta.47",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.47",
-    "@babel/preset-env": "^7.0.0-beta.47",
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-tester": "^5.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^16.1.0",
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "babel-plugin-tester": "^6.4.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.0",
     "eslint-plugin-class-property": "^1.1.0",
-    "eslint-plugin-import": "^2.12.0",
-    "jest": "^22.4.4"
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.8.0"
   }
 }
