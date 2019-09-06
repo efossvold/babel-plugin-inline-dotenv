@@ -1,5 +1,6 @@
 __tests__
-.eslintrc.yml
+.idea
+trc.yml
 .nvmrc
 .git
 .gitignore

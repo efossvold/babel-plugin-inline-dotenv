@@ -1,12 +1,12 @@
 ---
-# extends:
-  # - airbnb
+extends:
+  - eslint
+  - airbnb-base
 
 parser: babel-eslint
 
 plugins:
   - import
-  - class-property
 
 env:
   browser: true
